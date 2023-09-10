@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title> <!-- Escrita na aba do navegador -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css"> <!-- caminho para ativar o css-->
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Feminino</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Masculino</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infantil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Plus-size</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Bolsas</a>
+                </li>
+            </ul>
+            <img src="img/logo.jpg" alt="logo tamires rodrigues" class="logo__tamires container__imagem">
+        </div>
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.png" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.png" alt="compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuário.png" alt="usuario" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Renove seu guarda roupa com as melhores ofertas que você só encontra aqui!</p>
+        <input type="search" class="banner__pesquisa" placeholder="No que você está pensando?">
+    </section>
+    <!-- 1º Coluna -->
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+                <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/modelo 1.png" alt="modelo 1"></div>
+            <div class="swiper-slide"><img src="img/modelo 2.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 3.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 4.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 5.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 6.png" alt=""></div>
+
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você se interesse por...</h3>
+                    <h2 class="descrição__titulo-livro">Coleção Infantil</h2>
+                    <p class="descrição__texto">Veja a nova coleção infantil para o seu filhote arrasar!</p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/modelo 8.png" alt="modelo 8" class="descrição__imagem">
+            </div>
+        
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+            <!-- 1º coluna -->
+            <ul class="botões">
+                <li class="botões__item"><img src="img/Favoritos.png" alt="Favoritar"></li>
+                <li class="botões__item"><img src="img/Compras.png" alt="Comprar"></li>
+            </ul>
+            <!-- 2º coluna -->
+            <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+    </section>
+    <!-- 2º Coluna -->
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+                <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/modelo 6.png" alt="modelo 1"></div>
+            <div class="swiper-slide"><img src="img/modelo 5.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 4.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 3.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 2.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/modelo 1.png" alt=""></div>
+
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <img src="img/Estrelinhas.png" alt="Estrelinhas">
+                    <h3 class="descrição__titulo">Destaque do mês</h3>
+                    <h2 class="descrição__titulo-livro">Vestido colorido</h2>
+                    <p class="descrição__texto">A mais vendida ta com um desconto super especial!</p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/modelo 7.png" alt="modelo 7" class="descrição__imagem">
+                
+            </div>
+        
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+            <!-- 1º coluna -->
+            <ul class="botões">
+                <li class="botões__item"><img src="img/Favoritos.png" alt="Favoritar"></li>
+                <li class="botões__item"><img src="img/Compras.png" alt="Comprar"></li>
+            </ul>
+            <!-- 2º coluna -->
+            <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+    </section>
+    <section class="tópicos">
+        <h2 class="tópicos__título">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Bolsas</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Infantil</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Casacos</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Sapatos</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Feminino</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Masculino</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tênis</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Pulseira</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de novos modelos de roupa, sapato, bolsas e muito mais.</p>
+        <input type="email" placeholder="Cadastre o seu e-mail" class="contato__email">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo"> Grupo Tamires Rodrigues</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
